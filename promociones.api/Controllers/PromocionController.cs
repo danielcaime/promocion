@@ -59,10 +59,6 @@ namespace promociones.api.Controllers
         public async Task<IActionResult> Create(PromocionRequest promocionRequest)
         {
             var res = new BaseResponse<PromocionRequest>();
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest();
-            //}
 
             var promocion = _mapper.Map<data.Models.Promocion>(promocionRequest);
 
